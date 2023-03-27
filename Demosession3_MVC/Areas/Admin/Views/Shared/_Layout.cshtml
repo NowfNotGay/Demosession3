@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <table align="center" width="800" border="1">
+        <tr>
+            <td width="300" valign="top">
+                <a asp-area="admin" asp-controller="dashboard" asp-action="index">Dashboard</a>
+                <a asp-area="admin" asp-controller="account" asp-action="index">Account</a>
+
+            </td>
+            <td valign="top">
+                @RenderBody()
+
+            </td>
+
+        </tr>
+    </table>
+    <div>
+    </div>
+</body>
+</html>

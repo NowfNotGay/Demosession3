@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("css",false)
+</head>
+<body>
+    <div>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Aboutus" asp-action="Index">About Us</a>
+        <a asp-controller="News" asp-action="Index">News</a>
+        <br />
+        <br />
+        <a asp-controller="contact" asp-action="contact1">Contact 1</a>
+        <a asp-controller="contact" asp-action="contact2">Contact 2</a>
+        @RenderBody()
+
+
+        <br />
+        <br />
+        Copy Right
+    </div>
+</body>
+</html>
